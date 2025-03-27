@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cuongboi/create-dev-lib"
+    "url": "git+https://github.com/cuongboi/create-dev-lib.git"
   },
   "scripts": {
     "release": "npm publish --access public"
