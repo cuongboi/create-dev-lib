@@ -1,6 +1,6 @@
 {
   "name": "create-dev-lib",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scaffolding ESM CJS Library",
   "author": {
     "name": "cuongboi",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/cuongboi/create-dev-lib.git"
   },
   "scripts": {
-    "release": "npm version patch && git push origin main --tags && npm publish --access public"
+    "release": "npm version patch && npm publish --access public"
   },
   "type": "module",
   "bin": {
