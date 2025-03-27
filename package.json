@@ -11,7 +11,7 @@
     "url": "git+https://github.com/cuongboi/create-dev-lib.git"
   },
   "scripts": {
-    "release": "npm version patch && npm publish --access public"
+    "release": "npm publish --access public"
   },
   "type": "module",
   "bin": {
