@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "url";
 
 import "./scripts/deno-polyfills.js";
 import {
@@ -12,7 +13,8 @@ import {
 import { promptOptions } from "./scripts/prompt.js";
 
 const DEFAULT_TARGET_DIR = "lib";
-const TEMPLATE_PATH = path.resolve(__dirname, "template");
+const __filename = fileURLToPath(import.meta.url);
+const TEMPLATE_PATH = path.resolve(path.dirname(__filename), "template");
 
 const main = async () => {
   try {
