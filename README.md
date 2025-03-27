@@ -17,6 +17,13 @@
 Run the following command to scaffold a new library:
 
 ```bash
+npx create-dev-lib
+
+```
+
+OR
+
+```bash
 pnpm create dev-lib
 ```
 
@@ -24,6 +31,7 @@ OR
 
 ```bash
 yarn create dev-lib
+
 ```
 
 Follow the prompts to configure your project name.
@@ -32,6 +40,7 @@ Follow the prompts to configure your project name.
 
 The generated project will have the following structure:
 
+```
 project/
 ├── src/
 │ ├── [index.ts]
@@ -41,6 +50,7 @@ project/
 ├── [package.json]
 ├── [README.md]
 └── [tsconfig.json]
+```
 
 ## Scripts
 
