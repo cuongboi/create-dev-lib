@@ -1,0 +1,40 @@
+{
+  "name": "create-dev-lib",
+  "version": "0.1.0",
+  "description": "Scaffolding ESM CJS Library",
+  "author": {
+    "name": "cuongboi",
+    "url": "https://github.com/cuongboi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cuongboi/create-dev-lib"
+  },
+  "scripts": {
+    "release": "npm publish --access public"
+  },
+  "type": "module",
+  "bin": {
+    "create-dev-lib": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*/**",
+    "scripts"
+  ],
+  "dependencies": {
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4"
+  },
+  "homepage": "https://github.com/cuongboi/create-dev-lib",
+  "bugs": "https://github.com/cuongboi/create-dev-lib/issues",
+  "license": "MIT",
+  "keywords": [
+    "dev",
+    "create library",
+    "typescript library",
+    "create-dev-lib"
+  ]
+}
