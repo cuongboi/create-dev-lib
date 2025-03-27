@@ -12,7 +12,7 @@ import {
 import { promptOptions } from "./scripts/prompt.js";
 
 const DEFAULT_TARGET_DIR = "lib";
-const TEMPLATE_PATH = path.resolve(process.cwd(), "template");
+const TEMPLATE_PATH = path.resolve(__dirname, "template");
 
 const main = async () => {
   try {

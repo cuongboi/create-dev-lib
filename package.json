@@ -10,9 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/cuongboi/create-dev-lib.git"
   },
-  "scripts": {
-    "release": "npm publish --access public"
-  },
   "type": "module",
   "bin": {
     "create-dev-lib": "index.js"
