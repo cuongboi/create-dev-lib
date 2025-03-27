@@ -18,8 +18,6 @@ const TEMPLATE_PATH = path.resolve(path.dirname(__filename), "template");
 
 const main = async () => {
   try {
-    const packageManager = path.basename(process.argv[0]);
-
     const options = await promptOptions(DEFAULT_TARGET_DIR);
     const targetDir = options.targetDir || DEFAULT_TARGET_DIR;
     const targetDirPath = path.resolve(process.cwd(), targetDir);
@@ -50,9 +48,10 @@ const main = async () => {
     renameIgnoreFiles(targetDirPath, config);
 
     console.log(`To start developing, run the following commands:
+
     cd ${targetDir}
-    ${packageManager} install
-    ${packageManager} dev
+    npm install
+    npm run dev
 `);
   } catch (err) {
     exitOnError(err);
